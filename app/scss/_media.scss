@@ -1,0 +1,141 @@
+@import "vars";
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+	.money-bg {
+		text-align: center;
+		.header-secondary {
+			text-align: center;
+		}
+		.arrow-outer {
+			margin-bottom: 20px;
+		}
+	}
+	.laptop-video {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.numbers-outer {
+		justify-content: center;
+		margin-bottom: 20px;
+	}
+	.winner-card {
+		margin-right: auto;
+		margin-left: auto;
+	}
+	
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+	.footer {
+		.container {
+			flex-direction: column;
+		}
+		.logo {
+			margin: 0;
+		}
+		.nav-item {
+			text-transform: uppercase;
+			font-weight: 600;
+		}
+	}
+	.review {
+		width: 100%;
+	}
+	.rounded-image {
+		width: 255px;
+		height: 200px;
+		border-radius: 4em;
+	}
+	.header {
+		.container {
+			flex-wrap: wrap;
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+		}
+		.logo {
+			margin-right: 0;
+			padding-right: 0;
+			&::after {
+				display: none;
+			}
+		}
+	}
+	.main-nav {
+		flex-direction: column;
+		align-items: center;
+		max-width: 320px;
+	}
+	.header-right, .header .main-nav {
+		display: none;
+	}
+	.hamburger {
+		display: block;
+	}
+	.nav-item {
+		text-align: center;
+		padding: 5px 15px;
+	}
+
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+	.review__image {
+		position: static;
+		margin: 0 auto;
+		margin-bottom: 15px;
+	}
+	.circle-header {
+		width: 280px;	
+		height: 280px;	
+		&__number {
+			font-size: 57px;
+		}
+		&__second {
+			font-size: 24px;	
+		}
+	}
+	.laptop-video {
+		width: 300px;	
+		height: 240px;	
+		&__inner {
+			width: 220px;	
+			height: 135px;
+		}
+	}
+
+}
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
+@include media-breakpoint-up(sm) {
+
+}
+
+// ≤768px
+@include media-breakpoint-up(md) {
+
+}
+
+// ≤992px
+@include media-breakpoint-up(lg) {
+
+}
+
+// ≤1200px
+@include media-breakpoint-up(xl) {
+	
+}
