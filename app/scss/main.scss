@@ -375,6 +375,7 @@ h2, .header-secondary {
 }
 
 .button {
+	border: 0;
 	display: inline-block;
 	min-width: 215px;
 	padding-top: 20px;
@@ -392,6 +393,7 @@ h2, .header-secondary {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	transition: box-shadow 200ms ease-in;
+	cursor: pointer;
 	&:hover {
 		background: rgb(251,208,39);
 		background: linear-gradient(90deg, rgba(255,179,61,1) 20%, rgba(251,208,39,1) 80%);
@@ -923,6 +925,19 @@ ul.yellow {
 		transition: left 0.15s ease-out;
 		border-radius: 32px;
 	}	
+}
+
+input[type="text"], input[type="password"] {
+	border: none;
+	border-bottom: 2px solid #333;
+	padding: 15px;
+	margin-bottom: 30px;
+}
+
+.popup-form {
+	input {
+		width: 100%;
+	}
 }
 
 @import "media"; // Always at the end

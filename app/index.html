@@ -46,7 +46,7 @@
 				<a href="#" class="nav-item">Выплаты</a>
 			</div>
 			<div class="header-right">
-				<a href="#" class="nav-item nav-item_bold">Вход / Регистрация</a>
+				<a href="javascript:;" class="nav-item nav-item_bold open-login">Вход</a>/<a  href="javascript:;" class="nav-item nav-item_bold open-reg">Регистрация</a>
 			</div>
 		</div>
 	</div>
@@ -217,6 +217,32 @@
 				<a href="#" class="nav-item">Выплаты</a>
 			</div>
 		</div>
+	</div>
+
+	<div id="login-popup" style="display: none">
+		<div class="section-header section-header_big">Вход</div>
+		<div class="text-center"><a href="javascript:;" class="grey-link open-reg">Регистрация</a></div>
+		<form action="" class="popup-form">
+			<input type="text" placeholder="Логин">
+			<input type="password" placeholder="Пароль">
+			<div class="text-center">
+				<input type="submit" class="button">
+			</div>
+		</form>
+	</div>
+
+	<div id="reg-popup" style="display: none">
+		<div class="section-header section-header_big">Регистрация</div>
+		<div class="text-center"><a href="javascript:;" class="grey-link open-login">Вход</a></div>
+		<form action="" class="popup-form">
+			<input type="text" placeholder="Логин">
+			<input type="text" placeholder="Email">
+			<input type="password" placeholder="Пароль">
+			<input type="password" placeholder="Повтор пароля">
+			<div class="text-center">
+				<input type="submit" class="button">
+			</div>
+		</form>
 	</div>
 
 	<script src="js/scripts.min.js"></script>

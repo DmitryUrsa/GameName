@@ -1,5 +1,26 @@
 jQuery(function() {
 
+	jQuery('.open-login').click(function() {
+		$.fancybox.close();
+		$.fancybox.open({
+			src  : '#login-popup',
+			type : 'inline',
+			opts : {
+				touch : false,
+			}
+		});
+	});
+
+	jQuery('.open-reg').click(function() {
+		$.fancybox.close();
+		$.fancybox.open({
+			src  : '#reg-popup',
+			type : 'inline',
+			opts : {
+				touch : false,
+			}
+		});
+	});
 	jQuery('.number-minus').click(function() {
 		var input = jQuery(this).parent().find('.number-control__input');
 				value = input.val();
