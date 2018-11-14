@@ -3,6 +3,46 @@
 
 /*==========  Desktop First  ==========*/
 
+@media screen and (max-width: 1900px) {
+	.sidebar-right {
+		position: relative;
+		width: 100%;
+		margin-bottom: 140px;
+		margin-top: -90px;
+	}
+	.fixed-wrapper {
+		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 1600px) {
+	.sidebar-right {
+		margin-top: 0;
+		font-size: 18px;
+	}
+	.sidebar-left {
+		margin-top: -100px;
+		background-color: transparent;
+		position: relative;
+		width: auto;
+		margin-left: auto;
+		margin-right: auto;
+		.logo {
+			display: none;
+		}
+		.sidebar-links {
+			margin-top: 0;
+			a {
+				font-weight: 600;
+				font-size: 18px;
+			}
+		}
+	}
+	.fixed-wrapper {
+		margin-left: 0;
+	}
+}
+
 // ≥1200px
 @include media-breakpoint-down(lg) {
 	.money-bg {
@@ -31,6 +71,9 @@
 
 // ≥992px
 @include media-breakpoint-down(md) {
+	.header_fluid {
+		height: auto;
+	}
 	.footer {
 		.container {
 			flex-direction: column;
@@ -91,6 +134,9 @@
 
 // ≥576px
 @include media-breakpoint-down(xs) {
+	.switch {
+		width: 300px;
+	}
 	.review__image {
 		position: static;
 		margin: 0 auto;
